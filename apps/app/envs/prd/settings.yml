@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: simple-deployment
+  name: shieldapp-deployment
 spec:
   template:
     spec:
@@ -16,6 +16,6 @@ spec:
         - name: PAGE_LIMIT
           value: "25"
         - name: SORTING
-          value: "ascending"    
+          value: "ascending"
         - name: N_BUCKETS
-          value: "42"          
+          value: "42"

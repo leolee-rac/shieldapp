@@ -4,9 +4,6 @@ resource "helm_release" "all-apps" {
   name       = "all-apps"
   repository = "https://github.com/leolee-rac/shieldapp.git"
   chart      = "/"
-  depends_on = [
-    kubernetes_namespace.argocd
-  ]
 }
 
 #helm status argocd --namespace argocd

@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/leolee-rac/shieldapp.git
-    targetRevision: HEAD
+   version: feature/remove-kustomize
     path: appsets
   destination:
     server: https://kubernetes.default.svc

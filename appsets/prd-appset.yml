@@ -23,7 +23,7 @@ spec:
       # Source of the application manifests
       source:
         repoURL: https://github.com/leolee-rac/shieldapp.git
-        version: feature/remove-kustomize
+
         path: '{{.path.path}}'
 
       # Destination cluster and namespace to deploy the application

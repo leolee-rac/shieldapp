@@ -9,7 +9,7 @@ spec:
   generators:
   - git:
       repoURL: https://github.com/leolee-rac/shieldapp.git
-      revision: HEAD
+      targetRevision: feature/remove-kustomize
       directories:
       - path: apps/*/envs/prd
       #- path: apps/*/envs/prod-eu

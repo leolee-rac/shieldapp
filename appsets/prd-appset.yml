@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: prod-appset
+  name: prd-appset
   namespace: default
 spec:
   goTemplate: true

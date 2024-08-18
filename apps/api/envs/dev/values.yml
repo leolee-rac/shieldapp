@@ -1,14 +1,28 @@
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: shieldapi-deployment
+name: shieldapi
+replicas: 1
+app: trivial-go-web-app
+
+container:
+  name: webserver-simple
+  image: docker.io/kostiscodefresh/simple-env-app
+  tag: "1.0"
+  imagePullPolicy: Always
+  port: 8080
+
+service:
+  type: ClusterIP
+  port: 80
+
 spec:
   template:
     spec:
       containers:
       - name: webserver-simple
         env:
+        - name: ENV
+          value: "dev"
+        - name: GPU_ENABLED
+          value: "1"
         - name: UI_THEME
           value: "light"
         - name: CACHE_SIZE

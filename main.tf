@@ -3,6 +3,7 @@
 resource "helm_release" "all-apps" {
   name       = "all-apps"
   repository = "https://github.com/leolee-rac/shieldapp.git"
+  version    = "feature/remove-kustomize"
   chart      = "all-apps"
 }
 

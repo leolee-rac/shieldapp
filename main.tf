@@ -1,11 +1,11 @@
 # https://github.com/argoproj/argo-helm/blob/main/charts/argo-cd/README.md
 
-resource "helm_release" "all-apps" {
-  name       = "all-apps"
-  repository = "https://github.com/leolee-rac/shieldapp.git"
-  version    = "feature/remove-kustomize"
-  chart      = "all-apps"
-}
+# resource "helm_release" "all-apps" {
+#   name       = "all-apps"
+#   repository = "https://github.com/leolee-rac/shieldapp.git"
+#   version    = "feature/remove-kustomize"
+#   chart      = "all-apps"
+# }
 
 #helm status argocd --namespace argocd
 #helm install argocd argo/argo-cd --namespace argocd --create-namespace -f ha-install.yaml

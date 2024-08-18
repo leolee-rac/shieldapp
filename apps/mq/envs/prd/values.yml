@@ -1,4 +1,4 @@
-name: shieldapp-mq
+name: shieldmq
 replicas: 1
 app: trivial-go-web-app
 

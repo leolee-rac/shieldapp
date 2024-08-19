@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: shieldapp-mq-deployment
+  name: shieldappmq-deployment
   annotations:
     codefresh.io/app: simple-go-app
 spec:

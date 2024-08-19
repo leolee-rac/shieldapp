@@ -22,12 +22,13 @@ spec:
 
       # Source of the application manifests
       source:
-        repoURL: https://github.com/leolee-rac/shieldapp.git
-        targetRevision: feature/remove-kustomize
-        path: 'apps/{{index .path.segments 1}}/base'
         helm:
           valueFiles:
             - '{{.path.path}}/values.yaml' # Path to the environment-specific values file
+        repoURL: https://github.com/leolee-rac/shieldapp.git
+        targetRevision: feature/remove-kustomize
+        path: 'apps/{{index .path.segments 1}}/base'
+
 
       # Destination cluster and namespace to deploy the application
       destination:

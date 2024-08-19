@@ -24,10 +24,10 @@ spec:
       source:
         repoURL: https://github.com/leolee-rac/shieldapp.git
         targetRevision: feature/remove-kustomize
-        path: '{{ .path.path | replace "envs/prd" "base" }}'
+        path: '/{{ .path.path | replace "envs/prd" "base" }}'
         helm:
           valueFiles:
-            - '{{.path.path}}/values.yaml' # Path to the environment-specific values file
+            - '/{{.path.path}}/values.yaml' # Path to the environment-specific values file
 
       # Destination cluster and namespace to deploy the application
       destination:

@@ -25,7 +25,8 @@ spec:
         targetRevision: feature/remove-kustomize
         path: '{{.path.path}}'
         helm:
-          valuesFiles: "{{.path.path}}/values.yaml"  # Path to the environment-specific values file
+          valueFiles:
+            - '{{.path.path}}/values.yaml'  # Path to the environment-specific values file
 
       # Destination cluster and namespace to deploy the application
       destination:

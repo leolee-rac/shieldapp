@@ -19,3 +19,16 @@ spec:
         image: '{{ .Values.image.repository }}:{{ .Values.image.tag }}'
         ports:
         - containerPort: {{ .Values.container.port }}
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: '{{ .Values.name }}-service'
+spec:
+  type: {{ .Values.service.type }}
+  selector:
+    app: {{ .Values.app }}
+  ports:
+    - protocol: TCP
+      port: {{ .Values.service.port }}
+      targetPort: {{ .Values.container.port }}

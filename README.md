@@ -8,3 +8,4 @@ helm uninstall all-apps --debug -n default
 kubectl delete applicationset dev-appset
 
 kubectl delete applicationset  prd-appset
+helm uninstall all-apps --debug -n default; kubectl delete applicationset dev-appset; kubectl delete applicationset  prd-appset

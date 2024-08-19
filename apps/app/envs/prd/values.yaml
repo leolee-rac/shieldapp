@@ -4,10 +4,12 @@ app: trivial-go-web-app
 
 container:
   name: webserver-simple
-  image: docker.io/kostiscodefresh/simple-env-app
-  tag: "3.0"
-  imagePullPolicy: Always
   port: 8080
+image:
+  repository: docker.io/kostiscodefresh/simple-env-app
+  tag: "3.0"
+  pullPolicy: Always
+
 
 service:
   type: ClusterIP

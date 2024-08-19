@@ -27,7 +27,7 @@ spec:
         path: 'apps/{{index .path.segments 1}}/base'
         helm:
           valueFiles:
-            - '{{.path}}/values.yaml' # Path to the environment-specific values file
+            - '{{.path.path}}/values.yaml' # Path to the environment-specific values file
 
       # Destination cluster and namespace to deploy the application
       destination:

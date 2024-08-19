@@ -23,7 +23,7 @@ spec:
       source:
         repoURL: https://github.com/leolee-rac/shieldapp.git
         targetRevision: feature/remove-kustomize
-        path: '{{.path.path}}/../base'
+        path: 'apps/{{index .path.segments 1}}/base'
         helm:
           valueFiles:
             - '{{.path.path}}/values.yml'  # Path to the environment-specific values file

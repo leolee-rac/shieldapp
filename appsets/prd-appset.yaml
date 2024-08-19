@@ -27,7 +27,7 @@ spec:
         path: '{{ .path.path | replace "envs/prd" "base" }}'
         helm:
           valueFiles:
-            - '{{.path.path}}/values.yaml' # Path to the environment-specific values file
+            - 'apps/{{index .path.segments 1}}/envs/{{index .path.segments 3}}/values.yaml' # Path to the environment-specific values file
 
       # Destination cluster and namespace to deploy the application
       destination:

@@ -17,5 +17,3 @@ spec:
       - name: webserver-simple
         imagePullPolicy: Always
         image: docker.io/docker/example-voting-app-vote:latest
-        ports:
-        - containerPort: 8080

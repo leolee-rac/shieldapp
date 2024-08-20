@@ -8,4 +8,4 @@ helm uninstall all-apps --debug -n default
 kubectl delete applicationset dev-appset
 
 kubectl delete applicationset  prd-appset
-helm uninstall all-apps --debug -n default;kubectl delete applicationset dev-appset;kubectl delete applicationset  prd-appset
+helm uninstall all-apps --debug -n default;kubectl delete applicationset dev-appset;kubectl delete applicationset  prd-appset;kubectl delete replicaset $(kubectl get replicaset -o jsonpath='{ .items[?(@.spec.replicas==0)].metadata.name }')

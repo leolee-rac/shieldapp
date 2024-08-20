@@ -10,4 +10,7 @@ kubectl delete applicationset dev-appset
 kubectl delete applicationset  prd-appset
 helm uninstall all-apps --debug -n default;kubectl delete applicationset dev-appset;kubectl delete applicationset  prd-appset;kubectl delete replicaset $(kubectl get replicaset -o jsonpath='{ .items[?(@.spec.replicas==0)].metadata.name }')
 
-kubectl port-forward svc/shieldapp-service -n prd 8082:8080
+kubectl port-forward svc/shieldapi-service -n prd 8082:8081
+
+# example
+docker run -d -p 8081:80 --name example-voting-app-vote docker/example-voting-app-vote

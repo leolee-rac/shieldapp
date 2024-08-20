@@ -20,4 +20,4 @@ spec:
         imagePullPolicy: Always
         image: docker.io/docker/example-voting-app-vote:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 80

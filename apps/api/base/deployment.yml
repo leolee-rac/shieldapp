@@ -7,11 +7,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: trivial-go-web-app
+      app: hello-world-app
   template:
     metadata:
       labels:
-        app: trivial-go-web-app
+        app: hello-world-app
     spec:
       containers:
       - name: webserver-simple

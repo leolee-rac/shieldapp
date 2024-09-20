@@ -21,3 +21,5 @@ spec:
         image: docker.io/docker/example-voting-app-vote:latest
         ports:
         - containerPort: 80
+      destination:
+        namespace: default

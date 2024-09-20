@@ -3,6 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: shieldapp-deployment
+  namespace: dev
 spec:
   template:
     spec:
@@ -13,5 +14,3 @@ spec:
               value: "dev"
             - name: GPU_ENABLED
               value: "1"
-      destination:
-        namespace: dev

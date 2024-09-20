@@ -3,6 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: shieldapp-deployment
+  namespace: default
 spec:
   replicas: 2
   selector:
@@ -21,5 +22,3 @@ spec:
         image: docker.io/docker/example-voting-app-vote:latest
         ports:
         - containerPort: 80
-      destination:
-        namespace: default

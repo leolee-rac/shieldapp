@@ -3,6 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: shieldapi-deployment
+  namespace: default
 spec:
   replicas: 1
   selector:
@@ -13,6 +14,8 @@ spec:
       labels:
         app: shield-api
     spec:
+      nodeSelector:
+        agentpool: infra
       containers:
         - name: webserver-simple
           imagePullPolicy: Always

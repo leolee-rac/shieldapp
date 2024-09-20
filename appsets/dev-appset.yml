@@ -2,7 +2,6 @@ apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
   name: dev-appset
-  namespace: dev
 spec:
   goTemplate: true
   goTemplateOptions: ["missingkey=error"]
@@ -15,6 +14,7 @@ spec:
   template:
     metadata:
       name: "{{index .path.segments 1}}-{{index .path.segments 3}}"
+      namespace: "{{index .path.segments 3}}"
     spec:
       # The project the application belongs to.
       project: default

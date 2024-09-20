@@ -7,11 +7,11 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: hello-world-app
+      app: shield-app
   template:
     metadata:
       labels:
-        app: hello-world-app
+        app: shield-app
     spec:
       containers:
       - name: webserver-simple

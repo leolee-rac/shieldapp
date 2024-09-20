@@ -5,7 +5,7 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-    app: trivial-go-web-app
+    app: shield-mq
   ports:
     - protocol: TCP
       port: 8081

@@ -14,8 +14,8 @@ spec:
         app: shield-api
     spec:
       containers:
-      - name: webserver-simple
-        imagePullPolicy: Always
-        image: docker.io/docker/example-voting-app-vote:latest
-        ports:
-        - containerPort: 80
+        - name: webserver-simple
+          imagePullPolicy: Always
+          image: docker.io/docker/example-voting-app-vote:latest
+          ports:
+            - containerPort: 80

@@ -7,5 +7,5 @@ spec:
   template:
     spec:
       containers:
-      - name: webserver-simple
-        image: docker.io/docker/example-voting-app-vote:latest
+        - name: webserver-simple
+          image: docker.io/docker/example-voting-app-vote:latest

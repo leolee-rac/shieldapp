@@ -1,7 +1,7 @@
 # https://github.com/argoproj/argo-helm/blob/main/charts/argo-cd/README.md
 
-resource "helm_release" "all-apps" {
-  name       = "all-apps"
+resource "helm_release" "shields" {
+  name       = "shields"
   repository = "https://github.com/leolee-rac/shieldapp.git"
   chart      = "chart"
 }

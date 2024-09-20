@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: shields
+  name: all-apps
   namespace: default
 spec:
   project: default

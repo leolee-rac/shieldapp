@@ -8,7 +8,7 @@ helm uninstall shields --debug -n shield
 kubectl delete applicationset dev-appset
 
 kubectl delete applicationset  prd-appset
-helm uninstall shields --debug -n default;kubectl delete applicationset dev-appset;kubectl delete applicationset  prd-appset;kubectl delete replicaset $(kubectl get replicaset -o jsonpath='{ .items[?(@.spec.replicas==0)].metadata.name }')
+helm uninstall shields --debug -n argocd;kubectl delete applicationset dev-appset -n argocd;kubectl delete applicationset prd-appset -n argocd;kubectl delete replicaset $(kubectl get replicaset -o jsonpath='{ .items[?(@.spec.replicas==0)].metadata.name }')
 
 kubectl port-forward svc/shieldapi-service -n prd 8082:8081
 

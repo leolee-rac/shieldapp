@@ -2,6 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: shields
+  namespace: default
 spec:
   project: default
   source:
@@ -10,7 +11,7 @@ spec:
     path: appsets
   destination:
     server: https://kubernetes.default.svc
-    namespace: shield
+    namespace: default
   syncPolicy:
     syncOptions:
     - CreateNamespace=true

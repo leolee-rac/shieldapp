@@ -13,8 +13,8 @@ spec:
       labels:
         app: shield-api
     spec:
-      nodeSelector:
-        agentpool: infra
+      # nodeSelector:
+      #   agentpool: infra
       containers:
         - name: webserver-simple
           imagePullPolicy: Always

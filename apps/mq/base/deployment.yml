@@ -15,8 +15,8 @@ spec:
       labels:
         app: shield-mq
     spec:
-      nodeSelector:
-        agentpool: infra
+      # nodeSelector:
+      #   agentpool: infra
       containers:
         - name: webserver-simple
           imagePullPolicy: Always

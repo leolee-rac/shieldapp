@@ -1,11 +1,11 @@
 # https://github.com/argoproj/argo-helm/blob/main/charts/argo-cd/README.md
 
-# resource "helm_release" "shields" {
-#   name       = "shields"
-#   namespace = "shield"
-#   repository = "https://github.com/leolee-rac/shieldapp.git"
-#   chart      = "chart"
-# }
+resource "helm_release" "shields" {
+  name       = "shields"
+  namespace = "argocd"
+  repository = "https://github.com/leolee-rac/shieldapp.git"
+  chart      = "chart"
+}
 
 #helm status argocd --namespace argocd
 #helm install argocd argo/argo-cd --namespace argocd --create-namespace -f ha-install.yaml

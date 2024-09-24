@@ -7,7 +7,7 @@ spec:
   template:
     spec:
       containers:
-        - name: webserver-simple
+        - name: shield-api
           env:
             - name: ENV
               value: "prd"

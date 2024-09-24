@@ -7,9 +7,9 @@ spec:
   template:
     spec:
       containers:
-        - name: webserver-simple
+        - name: shield-api
           env:
-            - name: ENV
+            - name: Environment
               value: "dev"
-            - name: GPU_ENABLED
-              value: "1"
+            - name: EnvironmentName
+              value: "shielddev1"

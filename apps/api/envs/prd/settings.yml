@@ -7,7 +7,7 @@ spec:
   template:
     spec:
       containers:
-        - name: webserver-simple
+        - name: shield-api
           env:
             - name: UI_THEME
               value: "dark"

@@ -18,8 +18,8 @@ spec:
       # nodeSelector:
       #   agentpool: infra
       containers:
-        - name: webserver-simple
+        - name: shield-mq
           imagePullPolicy: Always
-          image: docker.io/docker/example-voting-app-vote:latest
+          image: shield-test-rhel:lastest
           ports:
             - containerPort: 80

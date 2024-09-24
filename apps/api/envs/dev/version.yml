@@ -8,4 +8,4 @@ spec:
     spec:
       containers:
         - name: shield-api
-          image: shield-test-rhel:lastest
+          image: shield-test-rhel:latest

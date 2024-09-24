@@ -18,7 +18,7 @@ spec:
       containers:
         - name: shield-api
           imagePullPolicy: Always
-          image: shield-test-rhel:lastest
+          image: shield-test-rhel:latest
           ports:
             - containerPort: 9990
             - containerPort: 9001

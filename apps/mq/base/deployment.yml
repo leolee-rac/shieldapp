@@ -20,6 +20,6 @@ spec:
       containers:
         - name: shield-mq
           imagePullPolicy: Always
-          image: shield-test-rhel:lastest
+          image: shield-test-rhel:latest
           ports:
             - containerPort: 80

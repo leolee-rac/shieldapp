@@ -2,8 +2,8 @@
 https://codefresh.io/blog/how-to-structure-your-argo-cd-repositories-using-application-sets/
 https://github.com/kostis-codefresh/many-appsets-demo/tree/main
 
-helm install shields chart/ --debug -n shield
-helm uninstall shields --debug -n shield
+helm install shields chart/ --debug -n argocd
+helm uninstall shields --debug -n argocd
 
 kubectl delete applicationset dev-appset
 

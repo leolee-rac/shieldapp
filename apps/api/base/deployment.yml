@@ -17,7 +17,7 @@ spec:
       #   agentpool: infra
       containers:
         - name: shield-api
-          imagePullPolicy: Always
+          imagePullPolicy: Never
           image: shield-test-rhel:latest
           ports:
             - containerPort: 9990

@@ -17,8 +17,8 @@ spec:
       #   agentpool: infra
       containers:
       - name: shield-app
-        imagePullPolicy: Never
-        image: shield-test-rhel:latest
+        imagePullPolicy: Always
+        image: racwaacrdev.azurecr.io/shield-test-rhel:latest
         ports:
           - containerPort: 9990
           - containerPort: 9001

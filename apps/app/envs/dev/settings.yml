@@ -10,4 +10,4 @@ spec:
         - name: shield-app
           env:
             - name: SqlConnectionString
-              value: "jdbc:sqlserver://192.168.1.68:1433;DatabaseName=shielddev1;user=sa;password=StrongP@ssword"
+              value: "jdbc:sqlserver://dcc-shdsql-d010.rac.com.au:1433;DatabaseName=shielddev2;user=sa;password=YourNewStrongP@ssword1"

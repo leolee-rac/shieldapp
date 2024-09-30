@@ -1,9 +1,17 @@
 # https://github.com/argoproj/argo-helm/blob/main/charts/argo-cd/README.md
 
-resource "helm_release" "shields" {
-  name       = "shields"
-  namespace = "argocd"
-  repository = "https://github.com/leolee-rac/shieldapp.git"
+# resource "helm_release" "shields" {
+#   name       = "shields"
+#   namespace = "argocd"
+#   repository = "https://github.com/leolee-rac/shieldapp.git"
+#   chart      = "chart"
+# }
+
+
+resource "helm_release" "shields-app" {
+  name       = "shields-app"
+  namespace  = "argocd"
+  repository = "https://github.com/racwa/raci-shield-v19.git"
   chart      = "chart"
 }
 
